@@ -16,6 +16,9 @@
     "extra": {
         "neos": {
             "package-key": "Vendor.Site"
-        }
+        },
+        "applied-flow-migrations": [
+            "TYPO3.Form-20160601101500"
+        ]
     }
 }
