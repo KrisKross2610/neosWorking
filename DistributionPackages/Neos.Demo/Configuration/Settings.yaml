@@ -88,3 +88,6 @@ Neos:
             values:
               - lv
             uriSegment: lv
+  Fusion:
+    defaultContext:
+      'Neos.Demo.Example': 'Neos\Demo\EelHelperClass\EelHelperTesting'

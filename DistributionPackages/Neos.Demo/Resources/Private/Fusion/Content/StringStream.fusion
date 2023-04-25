@@ -1,0 +1,9 @@
+prototype(Neos.Demo:Content.StringStream) < prototype(Neos.Neos:ContentComponent){
+    value = ${Neos.Demo.Example.removeWhitespaces(q(node).property('inputStream'))}
+
+    renderer = afx`
+        <div style="color: darkgrey">
+            {props.value}
+        </div>
+    `
+}

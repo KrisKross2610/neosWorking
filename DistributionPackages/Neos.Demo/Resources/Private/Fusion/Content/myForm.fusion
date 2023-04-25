@@ -1,0 +1,27 @@
+prototype(Neos.Demo:Content.myForm) < prototype(Neos.Neos:ContentComponent){
+    renderer = Neos.Fusion.Form:Runtime.RuntimeForm{
+        namespace = 'User Preference Form'
+        process{
+            content = afx`
+                <fieldset>
+                    <legend>Umfrage</legend>
+                    <Neos.Fusion.Form:FieldContainer label="Name" field.name="name" attributes.class="form-group clearfix">
+                        <div class="input">
+                            <Neos.Fusion.Form:Input attributes.class="form-control"/>
+                        </div>
+                    </Neos.Fusion.Form:FieldContainer>
+                    <Neos.Fusion.Form:FieldContainer label="Alter" field.name="age" attributes.class="form-group clearfix">
+                        <div class="input">
+                            <Neos.Fusion.Form:Input attributes.class="form-control"/>
+                        </div>
+                    </Neos.Fusion.Form:FieldContainer>
+                    <Neos.Fusion.Form:FieldContainer label="Lieblingsessen" field.name="favoriteFood" attributes.class="form-group clearfix">
+                        <div class="input">
+                            <Neos.Fusion.Form:Input attributes.class="form-control"/>
+                        </div>
+                    </Neos.Fusion.Form:FieldContainer>
+                </fieldset>
+            `
+        }
+    }
+}

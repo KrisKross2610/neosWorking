@@ -1,0 +1,13 @@
+Neos.Demo:Content.StringStream:
+  superTypes:
+    Neos.Neos:Content: true
+  ui:
+    label: 'Stream'
+    icon: icon-text
+    position: 100
+  properties:
+    inputStream:
+      label: 'Input Stream'
+      type: 'string'
+      ui:
+        inlineEditable: true

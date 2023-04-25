@@ -1,0 +1,13 @@
+prototype(Neos.Demo:Content.NavBlock) < prototype(Neos.Neos:ContentComponent){
+    id = ${q(node).property('_identifier')}
+
+    navitems = Neos.Neos:ContentCollection{
+        nodePath = 'navitems'
+    }
+
+    renderer = afx`
+    <div class="navBar" id={props.id}>
+        {props.navitems}
+    </div>
+    `
+}

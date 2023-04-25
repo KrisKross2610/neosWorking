@@ -1,0 +1,13 @@
+Neos.Demo:Content.NavBlock:
+  superTypes:
+    Neos.Neos:Content: true
+    Neos.Demo:Constraint.Content.Carousel: true
+    Neos.Demo:Constraint.Content.Column: true
+  ui:
+    label: 'Nav Block'
+    icon: 'fa-compass'
+    position: 400
+    inlineEditable: true
+  childNodes:
+    navitems:
+      type: 'Neos.Demo:Collection.Content.NavBlock'

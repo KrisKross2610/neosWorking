@@ -1,0 +1,7 @@
+Neos.Demo:Collection.Content.NavBlock:
+  superTypes:
+    Neos.Neos:ContentCollection: true
+  Constraints:
+    nodeTypes:
+      '*': false
+      Neos.Demo:Constraint.Content.NavBlock: true

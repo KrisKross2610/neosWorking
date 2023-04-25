@@ -1,0 +1,23 @@
+Neos.Demo:Content.myForm:
+  superTypes:
+    Neos.Neos:Content: true
+  ui:
+    type: 'string'
+    label: 'Form'
+    inlineEditable: true
+  properties:
+    name:
+      type: 'string'
+      defaultValue: ''
+      ui:
+        label: 'Name'
+    age:
+      type: 'string'
+      defaultValue: ''
+      ui:
+        label: 'Alter'
+    favoriteFood:
+      type: 'string'
+      defaultValue: ''
+      ui:
+        label: 'Lieblingsessen'
