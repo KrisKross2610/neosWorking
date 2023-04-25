@@ -1,0 +1,28 @@
+'Neos.Demo:Content.myFusionTesting':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Fusion Testing
+    icon: icon-laptop-binary
+    position: 100
+  properties:
+    firstName:
+      label: First Name
+      type: 'string'
+      options:
+        preset: 'inlineEditableText.standard'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Enter your first Name here'
+    lastName:
+      label: Last Name
+      type: 'string'
+      options:
+        preset: 'inlineEditableText.richtext'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Enter your first Name here'

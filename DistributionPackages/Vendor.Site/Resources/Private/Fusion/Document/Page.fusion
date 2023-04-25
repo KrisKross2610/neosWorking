@@ -1,1 +1,18 @@
-prototype(Vendor.Site:Document.Page) < prototype(Vendor.Site:Document.AbstractPage)
+/**
+ * Default page-rendering for the Vendor.Site website
+ */
+prototype(Vendor.Site:Document.myPage) < prototype(Neos.Neos:Page) {
+  head {
+    stylesheet.site = afx`
+      <link rel="stylesheet" href={Static.Resource.uri('Vendor.Site', 'Public/Styles/Main.css')} media="all"/>
+    `
+  }
+  body = Neos.Fusion:Component {
+    content = Neos.Neos:ContentCollection{
+      nodePath = 'main'
+    }
+    renderer = afx`
+      <h1>Hello World!</h1>
+    `
+  }
+}

@@ -1,0 +1,22 @@
+prototype(Neos.Demo:Content.myFusionTesting) < prototype(Neos.Neos:ContentComponent){
+    //create UserInterface
+    firstName = Neos.Neos:Editable{
+        property = 'firstName'
+        block = false
+    }
+    lastName = Neos.Neos:Editable{
+        property = 'lastName'
+        block = false
+    }
+
+    renderer = afx`
+    <div class="myUserInterface">
+        <div class="firstNameBlock">
+            First Name: {props.firstName}
+        </div>
+        <div class="lastNameBlock">
+            Last Name: {props.lastName}
+        </div>
+    </div>
+    `
+}

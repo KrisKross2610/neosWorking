@@ -1,8 +1,0 @@
-'Vendor.Site:Content.mytext':
-  superTypes:
-    'Neos.Neos:Content': true
-  ui:
-    label: My Text
-    icon: icon-text
-    position: 300
-    group: general
